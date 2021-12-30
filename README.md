@@ -86,7 +86,7 @@
 -	import and add service into constructor of component using that service
 	constructor(serviceName: ServiceNameFromImport)
 
-##Observables...
+## Observables...
 -	in the service itself...
 	Import Observable and of..
 	serviceFunction(): Observable<type def>{
@@ -98,3 +98,13 @@
 		// function using the object passed as arg...
 	)
 	good for handling promises
+
+## Mocking API Responses using json server
+-	in cli...
+	npm install json-server
+-	in rootdir, add db.json
+	each top-level key is a "collection"... basically its own db.
+-	in cli (or in pkg.json scripts...) add command
+	json-server --watch [filename from root dir] --port [whichever port you like...]
+-	in browser... got to localhost:[portnumber]
+	you should see welcome page, but using /[collection name] extension, you should see the json for that specific root-level collection...
