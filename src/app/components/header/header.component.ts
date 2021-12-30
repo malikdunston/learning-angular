@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 	title: string = 'Task Tracker App';
 	constructor() { }
 	ngOnInit(): void { // like compdidmount or useeffect...
+		// console.log(this);
 		// good place to place http reqs...
 	}
 }
