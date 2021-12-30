@@ -36,8 +36,14 @@
 	-	/app
 
 ## Component Structure
-	-	generally a comp will have four files...
-		-	ts file.. main class with props/methods, specifies template, stylesheet
-		-	template: html file
-		-	css files for specific comps...
-		-	test files
+-	generally a comp will have four files...
+	-	ts file.. main class with props/methods, specifies template, stylesheet
+	-	template: html file
+	-	css files for specific comps...
+	-	test files
+
+## Making Components (Header Comp)
+-	ng generate component components/header
+	-	creates folders components, with header inside
+	-	four files inside: css, html, ts, and .spec file...
+	-	no need to import into parents like react...
