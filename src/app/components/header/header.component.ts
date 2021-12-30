@@ -12,4 +12,7 @@ export class HeaderComponent implements OnInit {
 		// console.log(this);
 		// good place to place http reqs...
 	}
+	toggleAddTask(): void{
+		console.log("toggle");
+	}
 }

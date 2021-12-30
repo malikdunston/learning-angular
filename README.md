@@ -70,3 +70,7 @@
 	-	events:
 		-	syntax for event (use as attr..)
 			(eventName)="functionName()"
+	-	event emitters using Output
+		-	syntax in Comp Class...
+			@Output
+		-	because we want the click function for button to do different things on different buttons, we want to use this.... ?
