@@ -85,3 +85,16 @@
 	ng generate service [directory]
 -	import and add service into constructor of component using that service
 	constructor(serviceName: ServiceNameFromImport)
+
+##Observables...
+-	in the service itself...
+	Import Observable and of..
+	serviceFunction(): Observable<type def>{
+		const observable = of(thing observing);
+		return observable...
+	}
+-	in comp using Observable...
+	service.serviceFunction().subscribe(
+		// function using the object passed as arg...
+	)
+	good for handling promises
