@@ -123,3 +123,7 @@
 		this.[varname]
 	)
 -	don't need to inject of anymore...
+
+## Args in eventlisteners..
+-	Remember, have to define any if noimplicitany is on...
+	onWhatever(arg: any){...}
