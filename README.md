@@ -79,3 +79,9 @@
 -	how to import fontawesome...
 	-	ng add [pkgname]
 		app.modules automatically imports for you.
+
+## Creating Services
+-	use cli:
+	ng generate service [directory]
+-	import and add service into constructor of component using that service
+	constructor(serviceName: ServiceNameFromImport)
