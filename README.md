@@ -65,3 +65,6 @@
 			-	"property has no initializer" error in ts...
 				-	set "strictPropertyInitialization" to false in tsconfig...
 					-	[from stackoverflow](https://stackoverflow.com/questions/49699067/property-has-no-initializer-and-is-not-definitely-assigned-in-the-construc)
+		-	Inline Styles
+			-	format (inside html tag as attr): [ngStyle]="{'propName': value}"
+				-	more complicated than react.
