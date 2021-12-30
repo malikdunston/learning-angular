@@ -6,13 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
 	styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
-
 	@Input() text: string;
 	@Input() color: string;
-
 	constructor() { }
-
-	ngOnInit(): void {
+	ngOnInit(): void {}
+	onClick(): void{
+		console.log("add");
 	}
-
 }

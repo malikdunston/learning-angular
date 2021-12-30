@@ -1,7 +1,7 @@
 ## Learning Angular
 
-## [From Angular Crash Course 2021 by Traversy Media](https://www.youtube.com/watch?v=3dHNOWTI7H8)
-## [Another tutorial by Programming with Mosh](https://www.youtube.com/watch?v=k5E2AVpwsko)
+### [From Angular Crash Course 2021 by Traversy Media](https://www.youtube.com/watch?v=3dHNOWTI7H8)
+### [Another tutorial by Programming with Mosh](https://www.youtube.com/watch?v=k5E2AVpwsko)
 
 ## Starting a Peoject
 -	install cli
@@ -47,7 +47,6 @@
 	-	creates folders components, with header inside
 	-	four files inside: css, html, ts, and .spec file...
 	-	no need to import into parents like react...
--	styles...
 	-	nesting:
 		-	css: different structure than what I'm used to.
 			-	ex (index.html): app-root -> app-header -> childelem
@@ -68,3 +67,6 @@
 		-	Inline Styles
 			-	format (inside html tag as attr): [ngStyle]="{'propName': value}"
 				-	more complicated than react.
+	-	events:
+		-	syntax for event (use as attr..)
+			(eventName)="functionName()"

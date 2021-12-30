@@ -1,4 +1,5 @@
-<button [ngStyle]="{'background-color': color}" class="btn">
-	<!-- See above style declaration... much more ticky-tacky(quotes, brackets) than react -->
+<button class="btn"
+	[ngStyle]="{'background-color': color}" 
+	(click)="onClick()">
 	{{text}}
 </button>
