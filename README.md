@@ -3,6 +3,11 @@
 ### [From Angular Crash Course 2021 by Traversy Media](https://www.youtube.com/watch?v=3dHNOWTI7H8)
 ### [Another tutorial by Programming with Mosh](https://www.youtube.com/watch?v=k5E2AVpwsko)
 
+## Tools
+-	angular
+-	fortawesome-angular
+-	json-server
+
 ## Starting a Peoject
 -	install cli
 	npm i -g @angular/cli
@@ -127,3 +132,16 @@
 ## Args in eventlisteners..
 -	Remember, have to define any if noimplicitany is on...
 	onWhatever(arg: any){...}
+
+## ngClass
+-	syntax:
+	[ngClass]="{className: condition}"
+
+## Http Headers
+-	import HttpHeaders from angular/common/http...
+-	set const obj at top of service:
+	const httpOptions = {
+		headers: new HttpHeaders({
+			...set headers here...
+		})
+	}
