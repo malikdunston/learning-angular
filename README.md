@@ -3,6 +3,9 @@
 ### [From Angular Crash Course 2021 by Traversy Media](https://www.youtube.com/watch?v=3dHNOWTI7H8)
 ### [Another tutorial by Programming with Mosh](https://www.youtube.com/watch?v=k5E2AVpwsko)
 
+## Features Added to Tutorial:
+-	Archive Tasks (pushes to archive instead of delete...)
+
 ## Starting a Peoject
 -	install cli
 	npm i -g @angular/cli

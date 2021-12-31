@@ -7,13 +7,20 @@ import { Task } from '../Task';
 	providedIn: 'root'
 })
 export class TaskService {
-	private url = "http://localhost:5000/tasks"
+	private url = "http://localhost:5000"
 	constructor(private http:HttpClient) { }
 	getTasks(): Observable<Task[]> {
-		return this.http.get<Task[]>(this.url);
+		const newUrl = `${this.url}/tasks`;
+		return this.http.get<Task[]>(newUrl);
 	}
-	deleteTask(task: any): Observable<Task[]>{
-		const newUrl = `${this.url}/${task.id}`;
-		return this.http.delete<Task[]>(newUrl);
+	archiveTask(task: Task): Observable<Task[]>{
+		const archive = `${this.url}/archivedTasks`;
+		console.log(task);
+		return this.http.post<Task[]>(archive, task);
+	}
+	deleteTask(task: Task): Observable<Task[]>{
+		const allTasks = `${this.url}/tasks/${task.id}`;
+		this.http.delete<Task[]>(allTasks);
+		return this.getTasks();
 	}
 }
