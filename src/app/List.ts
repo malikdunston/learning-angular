@@ -1,5 +1,5 @@
 export interface List {
 	id: number
 	title: string,
-	tasks?: Task[]
+	tasks?: []
 }

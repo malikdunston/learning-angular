@@ -1,35 +1,28 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Task } from '../Task';
 import { List } from '../List';
-const httpOptions = {
-	headers: new HttpHeaders({
-		"Content-Type": "application/json"
-	})
-}
+const headers = new HttpHeaders({
+	"Content-Type": "application/json"
+})
 @Injectable({
 	providedIn: 'root'
 })
 export class TaskService {
 	private server = "http://localhost:5000"
-	lists: List[] = [];
-	tasks: Task[] = [];
 	constructor(private http:HttpClient) {}
-	getTasks(): Observable<Task[]>{
-		const url = `${this.server}/tasks`
-		return this.http.get<Task[]>(url)
+	getTasksByList(listId: number): Observable<Task[]>{
+		const url = `${this.server}/tasks`;
+		const params = new HttpParams().append("list", listId);
+		return this.http.get<Task[]>(url,{headers, params})
 	}
 	getLists(): Observable<List[]>{
 		const url = `${this.server}/lists`
-		return this.http.get<Task[]>(url)
+		return this.http.get<List[]>(url)
 	}
-	getData(){
-		const Lists = this.getLists();
-		const Tasks = this.getTasks();
-		return {
-			tasks: Tasks,
-			lists: Lists
-		}
+	getTasks(): Observable<Task[]>{
+		const url = `${this.server}/tasks`
+		return this.http.get<Task[]>(url)
 	}
 }
