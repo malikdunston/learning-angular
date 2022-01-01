@@ -7,12 +7,16 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ListComponent } from './components/list/list.component';
 import { TaskComponent } from './components/task/task.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
-  ListComponent,
-  TaskComponent
+		ListComponent,
+		TaskComponent,
+		HeaderComponent,
+		ButtonComponent,
 	],
 	imports: [
 		BrowserModule,

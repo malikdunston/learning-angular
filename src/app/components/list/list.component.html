@@ -1,5 +1,5 @@
 <div class="container">
-	<h3>{{list.title}}</h3>
+	<app-header [title]="list.title"></app-header>
 	<app-task *ngFor="let task of list.tasks"
 		[task]="task">
 	</app-task>

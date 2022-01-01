@@ -2,27 +2,27 @@
 	"tasks": [
 		{
 			"id": 7,
-			"text": "Do the Dishes",
+			"title": "Do the Dishes",
 			"day": "May 5th at 2:30pm",
 			"reminder": true,
 			"list": 25,
-			"active": true
+			"archive": null
 		},
 		{
 			"id": 1,
-			"text": "Courthouse",
+			"title": "Courthouse",
 			"day": "May 8th at 12:30pm",
 			"reminder": true,
 			"list": 55,
-			"active": true
+			"archive": null
 		},
 		{
 			"id": 2,
-			"text": "Meeting at School",
+			"title": "Meeting at School",
 			"day": "May 6th at 2:30pm",
 			"reminder": false,
 			"list": 55,
-			"active": false
+			"archive": true
 		}
 	],
 	"lists": [

@@ -12,17 +12,14 @@ const headers = new HttpHeaders({
 export class TaskService {
 	private server = "http://localhost:5000"
 	constructor(private http:HttpClient) {}
-	getTasksByList(listId: number): Observable<Task[]>{
+	getTasks(listId: number|null): Observable<Task[]>{
 		const url = `${this.server}/tasks`;
+		if (listId == null) return this.http.get<Task[]>(url,{headers})
 		const params = new HttpParams().append("list", listId);
 		return this.http.get<Task[]>(url,{headers, params})
 	}
 	getLists(): Observable<List[]>{
 		const url = `${this.server}/lists`
 		return this.http.get<List[]>(url)
-	}
-	getTasks(): Observable<Task[]>{
-		const url = `${this.server}/tasks`
-		return this.http.get<Task[]>(url)
 	}
 }
