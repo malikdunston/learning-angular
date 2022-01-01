@@ -18,6 +18,11 @@ export class TaskService {
 		const params = new HttpParams().append("list", listId);
 		return this.http.get<Task[]>(url,{headers, params})
 	}
+	getArchivedTasks(): Observable<Task[]>{
+		const url = `${this.server}/tasks`;
+		const params = new HttpParams().append("archive", true);
+		return this.http.get<Task[]>(url,{headers, params})
+	}
 	getLists(): Observable<List[]>{
 		const url = `${this.server}/lists`
 		return this.http.get<List[]>(url)

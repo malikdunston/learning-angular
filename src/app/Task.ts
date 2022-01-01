@@ -4,5 +4,5 @@ export interface Task {
 	day: string
 	reminder: boolean
 	list: number
-	active: boolean
+	archive: boolean
 }

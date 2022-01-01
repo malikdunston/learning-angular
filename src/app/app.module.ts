@@ -9,6 +9,7 @@ import { ListComponent } from './components/list/list.component';
 import { TaskComponent } from './components/task/task.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ButtonComponent } from './components/button/button.component';
+import { ArchiveComponent } from './components/archive/archive.component';
 
 @NgModule({
 	declarations: [
@@ -17,6 +18,7 @@ import { ButtonComponent } from './components/button/button.component';
 		TaskComponent,
 		HeaderComponent,
 		ButtonComponent,
+		ArchiveComponent,
 	],
 	imports: [
 		BrowserModule,
