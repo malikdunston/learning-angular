@@ -1,30 +1,38 @@
 {
 	"tasks": [
 		{
-			"id": 0,
-			"text": "Doctors Appointment",
+			"id": 7,
+			"title": "Do the Dishes",
 			"day": "May 5th at 2:30pm",
-			"reminder": false
+			"reminder": true,
+			"list": 25,
+			"active": true
 		},
 		{
 			"id": 1,
-			"text": "Courthouse",
+			"title": "Courthouse",
 			"day": "May 8th at 12:30pm",
-			"reminder": true
+			"reminder": true,
+			"list": 55,
+			"active": true
 		},
 		{
 			"id": 2,
-			"text": "Meeting at School",
+			"title": "Meeting at School",
 			"day": "May 6th at 2:30pm",
-			"reminder": true
-		},
-		{
-			"id": 3,
-			"text": "Food Shopping",
-			"day": "May 7th at 12:30pm",
-			"reminder": false
+			"reminder": false,
+			"list": 55,
+			"active": false
 		}
 	],
-	"archivedTasks": [
+	"lists": [
+		{
+			"id": 25,
+			"title": "Home"
+		},
+		{
+			"id": 55,
+			"title": "Work"
+		}
 	]
 }
