@@ -13,10 +13,23 @@ const httpOptions = {
 })
 export class TaskService {
 	private server = "http://localhost:5000"
-	lists: (number|string)[] = [11, 2, "apple"];
-	constructor(private http:HttpClient) { }
-	getLists(): Observable<List[]> {
-		const url = `${this.server}/lists`;
-		return this.http.get<List[]>(url);
+	lists: List[] = [];
+	tasks: Task[] = [];
+	constructor(private http:HttpClient) {}
+	getTasks(): Observable<Task[]>{
+		const url = `${this.server}/tasks`
+		return this.http.get<Task[]>(url)
+	}
+	getLists(): Observable<List[]>{
+		const url = `${this.server}/lists`
+		return this.http.get<Task[]>(url)
+	}
+	getData(){
+		const Lists = this.getLists();
+		const Tasks = this.getTasks();
+		return {
+			tasks: Tasks,
+			lists: Lists
+		}
 	}
 }

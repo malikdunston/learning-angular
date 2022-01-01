@@ -9,10 +9,11 @@ import { List } from './List';
 })
 export class AppComponent {
 	lists: List[] = [];
-	newList: any[] = [];
-	constructor(private taskService: TaskService) { }
+	constructor(private taskService: TaskService) {
+	}
 	ngOnInit(): void {
-		this.taskService.getLists().subscribe((lists)=>this.lists = lists);
-		this.newList = this.taskService.lists;
+		// this.taskService.getData().subscribe(lists => {
+		// 	console.log(lists);
+		// })
 	}
 }
