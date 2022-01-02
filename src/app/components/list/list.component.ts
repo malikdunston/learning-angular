@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TaskService } from '../../services/task.service';
+import { Task } from '../../Task';
 import { List } from '../../List';
 @Component({
 	selector: 'app-list',
@@ -16,5 +17,8 @@ export class ListComponent implements OnInit {
 				tasks: tasks.filter(t => t.archive == (false || null))
 			}
 		});
+	}
+	onToggle(task: any){
+		console.log(task);
 	}
 }

@@ -1,6 +1,7 @@
 <div class="container">
 	<app-header [title]="list.title"></app-header>
 	<app-task *ngFor="let task of list.tasks"
-		[task]="task">
+		[task]="task"
+		(onToggleReminder)="onToggle($event)">
 	</app-task>
 </div>
