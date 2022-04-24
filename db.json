@@ -23,6 +23,12 @@
       "day": "qqq",
       "reminder": false,
       "id": 7
+    },
+    {
+      "text": "klh;lkjh",
+      "day": "a",
+      "reminder": false,
+      "id": 8
     }
   ],
   "archivedTasks": []
