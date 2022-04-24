@@ -3,7 +3,7 @@
     {
       "text": "asdfa",
       "day": "fffffffff",
-      "reminder": true,
+      "reminder": false,
       "id": 4
     },
     {
@@ -11,6 +11,18 @@
       "day": "a",
       "reminder": true,
       "id": 5
+    },
+    {
+      "text": "wash the dog",
+      "day": "ffgghhhhhh",
+      "reminder": true,
+      "id": 6
+    },
+    {
+      "text": "uuu",
+      "day": "qqq",
+      "reminder": false,
+      "id": 7
     }
   ],
   "archivedTasks": []
