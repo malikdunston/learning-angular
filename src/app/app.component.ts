@@ -11,5 +11,6 @@ export class AppComponent {
 	constructor(private taskService: TaskService) {}
 	ngOnInit(): void {
 		this.taskService.getLists().subscribe(lists => this.lists = lists);
+		this.taskService.getMalikDunstonApiCredentials().subscribe(data => console.log(data));
 	}
 }
